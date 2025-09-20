@@ -1,14 +1,15 @@
 import { ArrowUpRight, ExternalLink, Star } from "lucide-react";
 import React from "react";
+import Link from "next/link";
 
 const Header = () => {
   return (
     <header className="relative z-10 flex justify-between items-center px-8 py-">
       {/* Logo */}
-      <div className="text-3xl flex items-center">
+      <Link href="/" className="text-3xl flex items-center cursor-pointer">
         <span className="text-white">Geo</span>
         <span className="text-gray-400">Shield</span>
-      </div>
+      </Link>
 
       {/* Right Section */}
       <div className="flex flex-col items-end gap-2 sm:flex-row sm:items-center sm:gap-4">
