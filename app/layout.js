@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { SparklesPreview } from "@/components/ui/sparkle";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import Sidebar from "@/components/ui/sidebar";
@@ -25,6 +26,8 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black text-white`}
       >
+          {/* Sparkles Background */}
+        <SparklesPreview className="fixed inset-0 -z-10" />
         <div className="flex min-h-screen flex-col">
           {/* Top Header */}
           <header>
@@ -32,7 +35,7 @@ export default function RootLayout({ children }) {
               <Header />
             </div>
           </header>
-
+ <SparklesPreview className="fixed inset-0 -z-10" />
           {/* Main Content with Sidebar */}
           <main className="flex flex-1">
             {/* Sidebar Left */}
